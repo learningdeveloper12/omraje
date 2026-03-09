@@ -1,42 +1,1439 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
+
+
+<!-- Mirrored from portfolio-html-chi.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Mar 2026 04:42:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omraje Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Henry-personal-portfolio-html-template</title>
+    <meta name="description" content="Henry-personal-portfolio-html-template">
+    <!-- fab icon -->
+    <link rel="shortcut icon" href="assets/images/logo.webp" type="image/x-icon">
+    <!-- font Awesome Css -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- odometer -->
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <!-- wow css -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- hover reveal image css -->
+    <link rel="stylesheet" href="assets/css/imagerevealhover.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to Omraje's Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- MOUSE & CURSOR FOLLOWER -->
+    <div id="cursor"></div>
+    <div id="cursor-border"></div>
+    <!-- Header Section Start -->
+    <header class="z-3">
+        <div class="row align-items-center py-4 py-md-0">
+            <div class="col-2 col-md-1">
+                <div class="logo text-white">
+                    <a href="index-2.html" class="d-flex align-items-center text-decoration-none text-white">
+                        <img src="assets/images/logo.webp" alt="site-logo">
+                        <span>Henry</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9 nav__dark">
+                <!-- Navbar -->
+                <nav>
+                    <ul class="d-md-flex justify-content-md-end">
+                        <li><a href="index-2.html">Home</a></li>
+                        <li><a href="#skills">My Skills</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolios</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li class="d-md-none"><a href="#footer">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+                <div class="contact__button d-flex justify-content-center align-items-center">
+                    <div class="three"></div>
+                    <div class="four"></div>
+                    <a href="#footer" class="text-white">Contact</a>
+                </div>
+            </div>
+            <div class="mobile__bar col-2 ms-auto ms-md-0 text-end p-0 col-md-1 d-block d-md-none">
+                <div class="line-one"></div>
+                <div class="line-two"></div>
+                <div class="line-three"></div>
+            </div>
+        </div>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi, I'm Omraje, a passionate web developer with a love for creating interactive and engaging websites.</p>
-        </section>
-        <section id="projects">
-            <h2>My Projects</h2>
-            <ul>
-                <li><h3>Project One</h3><p>Description of project one.</p></li>
-                <li><h3>Project Two</h3><p>Description of project two.</p></li>
-                <li><h3>Project Three</h3><p>Description of project three.</p></li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>You can reach me at omraje@example.com</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Omraje. All rights reserved.</p>
+    <!-- Header Section End -->
+    <!-- Hero Section Start -->
+    <section class="hero__section pt__80">
+        <div class="custom__container">
+            <div class="row g-4">
+                <div class="col-md-6 order-2 order-md-1">
+                    <div class="hero__left">
+                        <h1 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">I’m <span
+                                class="name">Henry</span>
+                        </h1>
+                        <h2 id="typewriter" class="wow fadeInDown designation" data-wow-duration="1s"
+                            data-wow-delay="0.4s">
+                            <span class="d-none">.</span>
+                        </h2>
+                        <h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s"><span
+                                class="small__txt">based in</span> New York</h3>
+                        <p class="wow zoomIn" data-wow-duration="1s" data-wow-delay="0.12s">Building the worlds
+                            best marketing websites for over a decade. Your trusted partner for
+                            strategy.</p>
+                        <div class="pt__40 d-flex align-items-center">
+                            <div class="schedule__btn__container">
+                                <button
+                                    class="btn btn__default outline__btn btn--border btn--primary btn--animated text-white">
+                                    Schedule Free Call
+                                    <i class="fa-solid fa-plus plus__icon"></i>
+                                </button>
+                            </div>
+                            <a href="javascript:void(0)" class="text-white portfolio__btn">My Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                    <div class="hero__right position-relative">
+                        <img class="bg__img" src="assets/images/hero-right-bg.webp" alt="">
+                        <img class="shape" src="assets/images/hero-right-shape.webp" alt="">
+                        <img class="profile" src="assets/images/profile.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+    <!-- Brand Section Start -->
+    <section class="brand__section pt__80 pb__80">
+        <div class="custom__container">
+            <div class="brand__content">
+                <h6 class="text-center brand__title wow zoomIn" data-wow-duration="1s" data-wow-delay="0.7s">
+                    Proudly work with
+                    selected companies</h6>
+                <div class="swiper brand__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/images/brands/brand-1.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/brands/brand-2.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/brands/brand-3.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/brands/brand-4.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/brands/brand-5.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/brands/brand-1.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/brands/brand-1.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Brand Section End -->
+    <!-- Skills Section Start -->
+    <section id="skills" class="skills__section pt__120 pb__120">
+        <div class="custom__container">
+            <p class="heading__small wow fadeIn">MY SKILLS</p>
+            <h3 class="heading pb__48 wow fadeInLeft" data-wow-delay="0.2s">Bringing brands to life with design.</h3>
+
+            <div class="skills__content" id="progress">
+                <div class="row g-4">
+                    <div class="col-md-6 skills__left">
+                        <div class="position-relative wow fadeInLeft" data-wow-delay="0.4s">
+                            <img src="assets/images/skills/skills-cover.webp" alt="skills-cover">
+                            <img class="position-absolute signature" src="assets/images/skills/signature.webp"
+                                alt="owners-signature">
+                        </div>
+                    </div>
+                    <div class="col-md-6 skills__right text-white wow fadeInRight" data-wow-delay="0.5s">
+                        <div class="progress__container">
+                            <div class="content d-flex justify-content-between align-items-center">
+                                <span class="playfair__style">Graphic design</span>
+                                <span class="playfair__style percentage">80%</span>
+                            </div>
+                            <div class="progress__bar">
+                                <div class="bar" data-percent="80"></div>
+                            </div>
+                        </div>
+                        <div class="progress__container">
+                            <div class="content d-flex justify-content-between align-items-center">
+                                <span class="playfair__style">Lead generation</span>
+                                <span class="playfair__style">65%</span>
+                            </div>
+                            <div class="progress__bar">
+                                <div class="bar" data-percent="65"></div>
+                            </div>
+                        </div>
+                        <div class="progress__container">
+                            <div class="content d-flex justify-content-between align-items-center">
+                                <span class="playfair__style">Photography</span>
+                                <span class="playfair__style">75%</span>
+                            </div>
+                            <div class="progress__bar">
+                                <div class="bar" data-percent="75"></div>
+                            </div>
+                        </div>
+                        <div class="progress__container">
+                            <div class="content d-flex justify-content-between align-items-center">
+                                <span class="playfair__style">Illustration</span>
+                                <span class="playfair__style">99%</span>
+                            </div>
+                            <div class="progress__bar">
+                                <div class="bar" data-percent="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills__counter pt__103">
+                <div class="row">
+                    <div class="counter__left col-md-5 d-flex justify-content-center mb-5 mb-md-0">
+                        <p class="wow fadeInLeft" data-wow-delay="0.2s">
+                            Compellingly repurpose covalent core competencies for top-line paradigms. Continually
+                            repurpose proactive bandwidth whereas clicksand
+                        </p>
+                    </div>
+                    <div class="counter__right col-md-7">
+                        <div class="d-flex justify-content-md-between">
+                            <div>
+                                <div class="counter text-center text-md-start wow fadeInUp">
+                                    <h4><span class="count odometer" data-odometer-final="3.5">.k</span>k</h4>
+                                    <span class="title">Job done successfully</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="counter text-center text-md-start wow fadeInUp" data-wow-delay="0.2s">
+                                    <h4><span class="count odometer" data-odometer-final="14">.</span></h4>
+                                    <span class="title">Award winner</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="counter text-center text-md-start wow fadeInUp" data-wow-delay="0.5s">
+                                    <h4><span class="count odometer" data-odometer-final="08">.</span>k</h4>
+                                    <span class="title">Years Experience</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="counter text-center text-md-start wow fadeInUp" data-wow-delay="0.7s">
+                                    <h4><span class="count odometer" data-odometer-final="1.2">.</span>k</h4>
+                                    <span class="title">Worldwide Clients</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section End -->
+    <!-- Services Section Start -->
+    <section id="services" class="services__section pt__120 pb__120">
+        <div class="custom__container">
+            <div class="row">
+                <div class="col-md-6 services__left wow fadeInLeft">
+                    <p class="heading__small">SERVICES</p>
+                    <h3 class="heading">What I do for my client</h3>
+                    <p class="para">Compellingly repurpose covalent core
+                        competencies for top-line paradigms.</p>
+                </div>
+                <div class="col-md-6 services__right">
+                    <div class="working__area">
+                        <div class="content__container mt__40 wow fadeInDown">
+                            <span class="count">01</span>
+                            <div class="d-flex justify-content-between link">
+                                <h5><a href="javascript:void(0)" data-fx="1"
+                                        data-img="./assets/images/txt-hover.webp">Website design</a>
+                                </h5>
+                                <img class="arrow" src="assets/images/ArrowUpRight.webp" alt="arrow-icon">
+                            </div>
+                        </div>
+                        <div class="content__container mt__40 wow fadeInDown" data-wow-delay="0.3s">
+                            <span class="count">02</span>
+                            <div class="d-flex justify-content-between link">
+                                <h5><a href="javascript:void(0)" data-fx="1"
+                                        data-img="./assets/images/txt-hover.webp">Design strategy</a>
+                                </h5>
+                                <img src="assets/images/ArrowUpRight.webp" alt="arrow-icon">
+                            </div>
+                        </div>
+                        <div class="content__container mt__40 wow fadeInDown" data-wow-delay="0.5s">
+                            <span class="count">03</span>
+                            <div class="d-flex justify-content-between link">
+                                <h5><a href="javascript:void(0)" data-fx="1"
+                                        data-img="./assets/images/txt-hover.webp">UI/UX design</a>
+                                </h5>
+                                <img src="assets/images/ArrowUpRight.webp" alt="arrow-icon">
+                            </div>
+                        </div>
+                        <div class="content__container mt__40 wow fadeInDown" data-wow-delay="0.7s">
+                            <span class="count">04</span>
+                            <div class="d-flex justify-content-between link">
+                                <h5><a href="javascript:void(0)" data-fx="1"
+                                        data-img="./assets/images/txt-hover.webp">Product design</a>
+                                </h5>
+                                <img src="assets/images/ArrowUpRight.webp" alt="arrow-icon">
+                            </div>
+                        </div>
+                        <div class="content__container mt__40 wow fadeInDown" data-wow-delay="0.9s">
+                            <span class="count">05</span>
+                            <div class="d-flex justify-content-between link">
+                                <h5><a href="javascript:void(0)" data-fx="1"
+                                        data-img="./assets/images/txt-hover.webp">Branding</a></h5>
+                                <img src="assets/images/ArrowUpRight.webp" alt="arrow-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+    <!-- Featured Section Started -->
+
+    <section id="portfolio" class="featured__section pt__120 pb__100">
+        <div class="custom__container">
+            <p class="text-center heading__small text-white wow fadeIn">PORTFOLIO</p>
+            <h3 class="text-center text-white mb__48 wow zoomIn">Featured works</h3>
+            <div class="row g-4 mb__40">
+                <div class="col-md-6">
+                    <div class="single__feature position-relative wow fadeInUp" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                        <img src="assets/images/featured/featured-1.webp" alt="featured">
+                        <div class="featured__info position-absolute">
+                            <div>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/arrow-white.webp" alt="arrow">
+                                    <h4>Mobile</h4>
+                                </div>
+                                <p>Trading Website Development for Dark X</p>
+                            </div>
+                        </div>
+                        <p class="tag">Web Design</p>
+                        <img src="assets/images/arrow-white.webp" alt="arrow" class="arrow">
+                    </div>
+                    <!-- Project Details Modal -->
+                    <div class="modal fade featured__modal" id="exampleModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header d-md-none">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <img class="w-100 rounded-3" src="assets/images/featured/project-1.webp"
+                                                alt="featured">
+                                            <h4 class="my-4 title">Project Details</h4>
+                                            <hr>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
+                                                odio
+                                                odit, est fuga pariatur minus. Voluptatibus eaque aut cupiditate
+                                                nam
+                                                dicta, corrupti quasi officia explicabo repellendus corporis
+                                                dolore
+                                                tempora sed reiciendis. Ullam, ipsam quae ratione dolore
+                                                sapiente
+                                                recusandae voluptatum porro in vel eveniet cupiditate sint
+                                                aliquid
+                                                praesentium et cum dolor.</p>
+
+                                            <h6 class="my-4 title2">--Some Key Features Of This Project</h6>
+                                            <hr>
+                                            <p>
+                                                <strong>Design System:</strong> Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit. Fugiat corrupti vitae animi corporis, in atque
+                                                tempore
+                                                praesentium harum nisi dolores doloribus, a architecto aperiam
+                                                autem
+                                                quia ab exercitationem omnis! Omnis.
+                                            </p>
+                                            <p>
+                                                <strong>Code Structure:</strong> Lorem, ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Ipsam harum est ipsum explicabo temporibus
+                                                iste
+                                                laudantium, voluptates iure quisquam et dolores aliquam nostrum
+                                                nulla?
+                                                Officia sunt quis corrupti alias inventore.
+                                            </p>
+                                            <p>
+                                                <strong>Awesome Animations:</strong> Lorem, ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Ipsam harum est ipsum explicabo temporibus
+                                                iste
+                                                laudantium, voluptates iure quisquam et dolores aliquam nostrum
+                                                nulla?
+                                                Officia sunt quis corrupti alias inventore.
+                                            </p>
+
+                                            <div class="project-img my-4">
+                                                <div class="row gy-3 gy-md-0">
+                                                    <div class="col-md-6">
+                                                        <img class="rounded-3"
+                                                            src="assets/images/featured/project-2.webp" alt="project">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <img class="rounded-3"
+                                                            src="assets/images/featured/project-3.webp" alt="project">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p>
+                                                <strong>Client Feedback:</strong> Lorem, ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Ipsam harum est ipsum explicabo temporibus
+                                                iste
+                                                laudantium, voluptates iure quisquam et dolores aliquam nostrum
+                                                nulla?
+                                                Officia sunt quis corrupti alias inventore.
+                                            </p>
+
+                                            <hr>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="client__details">
+                                                <h6>About Project</h6>
+                                                <div>
+                                                    <div class="single__info d-flex justify-content-between">
+                                                        <span>Client</span>
+                                                        <span>Portfolio Maker</span>
+                                                    </div>
+                                                    <div class="single__info d-flex justify-content-between">
+                                                        <span>Date</span>
+                                                        <span>02/08/2023</span>
+                                                    </div>
+                                                    <div class="single__info d-flex justify-content-between">
+                                                        <span>Project</span>
+                                                        <span>Portfolio Website</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="client__details mt-4">
+                                                <h6 class="mb-3">Get a Free Quote</h6>
+                                                <div>
+                                                    <input type="text" placeholder="Full name">
+                                                    <input type="email" placeholder="Email@" class="my-3">
+                                                    <textarea class="mb-3" name="message" id="freequote" cols="30"
+                                                        rows="10" placeholder="type your message"></textarea>
+                                                    <button type="submit"
+                                                        class="btn btn-dark text-white w-100 fw-medium">
+                                                        Place Request
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="single__feature position-relative wow fadeInUp" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal1" data-bs-whatever="@mdo">
+                        <img src="assets/images/featured/featured-2.webp" alt="featured">
+                        <div class="featured__info position-absolute">
+                            <div>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/arrow-white.webp" alt="arrow">
+                                    <h4>Mobile</h4>
+                                </div>
+                                <p>Trading Website Development for Dark X</p>
+                            </div>
+                        </div>
+                        <p class="tag">Web Design</p>
+                        <img src="assets/images/arrow-white.webp" alt="arrow" class="arrow">
+                    </div>
+                    <!-- Project Details Modal -->
+                    <div class="modal fade featured__modal" id="exampleModal1" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header d-md-none">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <img class="w-100 rounded-3" src="assets/images/featured/project-1.webp"
+                                                alt="featured">
+                                            <h4 class="my-4 title">Project Details</h4>
+                                            <hr>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
+                                                odio
+                                                odit, est fuga pariatur minus. Voluptatibus eaque aut cupiditate
+                                                nam
+                                                dicta, corrupti quasi officia explicabo repellendus corporis
+                                                dolore
+                                                tempora sed reiciendis. Ullam, ipsam quae ratione dolore
+                                                sapiente
+                                                recusandae voluptatum porro in vel eveniet cupiditate sint
+                                                aliquid
+                                                praesentium et cum dolor.</p>
+
+                                            <h6 class="my-4 title2">--Some Key Features Of This Project</h6>
+                                            <hr>
+                                            <p>
+                                                <strong>Design System:</strong> Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit. Fugiat corrupti vitae animi corporis, in atque
+                                                tempore
+                                                praesentium harum nisi dolores doloribus, a architecto aperiam
+                                                autem
+                                                quia ab exercitationem omnis! Omnis.
+                                            </p>
+                                            <p>
+                                                <strong>Code Structure:</strong> Lorem, ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Ipsam harum est ipsum explicabo temporibus
+                                                iste
+                                                laudantium, voluptates iure quisquam et dolores aliquam nostrum
+                                                nulla?
+                                                Officia sunt quis corrupti alias inventore.
+                                            </p>
+                                            <p>
+                                                <strong>Awesome Animations:</strong> Lorem, ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Ipsam harum est ipsum explicabo temporibus
+                                                iste
+                                                laudantium, voluptates iure quisquam et dolores aliquam nostrum
+                                                nulla?
+                                                Officia sunt quis corrupti alias inventore.
+                                            </p>
+
+                                            <div class="project-img my-4">
+                                                <div class="row gy-3 gy-md-0">
+                                                    <div class="col-md-6">
+                                                        <img class="rounded-3"
+                                                            src="assets/images/featured/project-2.webp" alt="project">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <img class="rounded-3"
+                                                            src="assets/images/featured/project-3.webp" alt="project">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p>
+                                                <strong>Client Feedback:</strong> Lorem, ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Ipsam harum est ipsum explicabo temporibus
+                                                iste
+                                                laudantium, voluptates iure quisquam et dolores aliquam nostrum
+                                                nulla?
+                                                Officia sunt quis corrupti alias inventore.
+                                            </p>
+
+                                            <hr>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="client__details">
+                                                <h6>About Project</h6>
+                                                <div>
+                                                    <div class="single__info d-flex justify-content-between">
+                                                        <span>Client</span>
+                                                        <span>Portfolio Maker</span>
+                                                    </div>
+                                                    <div class="single__info d-flex justify-content-between">
+                                                        <span>Date</span>
+                                                        <span>02/08/2023</span>
+                                                    </div>
+                                                    <div class="single__info d-flex justify-content-between">
+                                                        <span>Project</span>
+                                                        <span>Portfolio Website</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="client__details mt-4">
+                                                <h6 class="mb-3">Get a Free Quote</h6>
+                                                <div>
+                                                    <input type="text" placeholder="Full name">
+                                                    <input type="email" placeholder="Email@" class="my-3">
+                                                    <textarea class="mb-3" name="message" id="freequote3" cols="30"
+                                                        rows="10" placeholder="type your message"></textarea>
+                                                    <button type="submit"
+                                                        class="btn btn-dark text-white w-100 fw-medium">
+                                                        Place Request
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb__40">
+                <div class="col-md-7">
+                    <div class="single__feature position-relative wow fadeInUp" data-wow-delay="0.6s"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@mdo">
+                        <img src="assets/images/featured/featured-3.webp" alt="featured">
+                        <div class="featured__info">
+                            <div>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/arrow-white.webp" alt="arrow">
+                                        <h4>Mobile</h4>
+                                    </div>
+                                </div>
+                                <p>Trading Website Development for Dark X</p>
+                            </div>
+                        </div>
+                        <p class="tag">Web Design</p>
+                        <img src="assets/images/arrow-white.webp" alt="arrow" class="arrow">
+                    </div>
+
+                    <!-- Project Details Modal -->
+                    <div class="modal fade featured__modal" id="exampleModal2" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header d-md-none">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <img class="w-100 rounded-3" src="assets/images/featured/project-1.webp"
+                                                alt="featured">
+                                            <h4 class="my-4 title">Project Details</h4>
+                                            <hr>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
+                                                odio
+                                                odit, est fuga pariatur minus. Voluptatibus eaque aut cupiditate
+                                                nam
+                                                dicta, corrupti quasi officia explicabo repellendus corporis
+                                                dolore
+                                                tempora sed reiciendis. Ullam, ipsam quae ratione dolore
+                                                sapiente
+                                                recusandae voluptatum porro in vel eveniet cupiditate sint
+                                                aliquid
+                                                praesentium et cum dolor.</p>
+
+                                            <h6 class="my-4 title2">--Some Key Features Of This Project</h6>
+                                            <hr>
+                                            <p>
+                                                <strong>Design System:</strong> Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit. Fugiat corrupti vitae animi corporis, in atque
+                                                tempore
+                                                praesentium harum nisi dolores doloribus, a architecto aperiam
+                                                autem
+                                                quia ab exercitationem omnis! Omnis.
+                                            </p>
+                                            <p>
+                                                <strong>Code Structure:</strong> Lorem, ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Ipsam harum est ipsum explicabo temporibus
+                                                iste
+                                                laudantium, voluptates iure quisquam et dolores aliquam nostrum
+                                                nulla?
+                                                Officia sunt quis corrupti alias inventore.
+                                            </p>
+                                            <p>
+                                                <strong>Awesome Animations:</strong> Lorem, ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Ipsam harum est ipsum explicabo temporibus
+                                                iste
+                                                laudantium, voluptates iure quisquam et dolores aliquam nostrum
+                                                nulla?
+                                                Officia sunt quis corrupti alias inventore.
+                                            </p>
+
+                                            <div class="project-img my-4">
+                                                <div class="row gy-3 gy-md-0">
+                                                    <div class="col-md-6">
+                                                        <img class="rounded-3"
+                                                            src="assets/images/featured/project-2.webp" alt="project">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <img class="rounded-3"
+                                                            src="assets/images/featured/project-3.webp" alt="project">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p>
+                                                <strong>Client Feedback:</strong> Lorem, ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Ipsam harum est ipsum explicabo temporibus
+                                                iste
+                                                laudantium, voluptates iure quisquam et dolores aliquam nostrum
+                                                nulla?
+                                                Officia sunt quis corrupti alias inventore.
+                                            </p>
+
+                                            <hr>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="client__details">
+                                                <h6>About Project</h6>
+                                                <div>
+                                                    <div class="single__info d-flex justify-content-between">
+                                                        <span>Client</span>
+                                                        <span>Portfolio Maker</span>
+                                                    </div>
+                                                    <div class="single__info d-flex justify-content-between">
+                                                        <span>Date</span>
+                                                        <span>02/08/2023</span>
+                                                    </div>
+                                                    <div class="single__info d-flex justify-content-between">
+                                                        <span>Project</span>
+                                                        <span>Portfolio Website</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="client__details mt-4">
+                                                <h6 class="mb-3">Get a Free Quote</h6>
+                                                <div>
+                                                    <input type="text" placeholder="Full name">
+                                                    <input type="email" placeholder="Email@" class="my-3">
+                                                    <textarea class="mb-3" name="message" id="freequote2" cols="30"
+                                                        rows="10" placeholder="type your message"></textarea>
+                                                    <button type="submit"
+                                                        class="btn btn-dark text-white w-100 fw-medium">
+                                                        Place Request
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="single__feature position-relative wow fadeInUp" data-wow-delay="0.8s"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal3" data-bs-whatever="@mdo">
+                        <img src="assets/images/featured/featured-4.webp" alt="featured">
+                        <div class="featured__info">
+                            <div>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/arrow-white.webp" alt="arrow">
+                                    <h4>Mobile</h4>
+                                </div>
+                                <p>Trading Website Development for Dark X</p>
+                            </div>
+                        </div>
+                        <p class="tag">Web Design</p>
+                        <img src="assets/images/arrow-white.webp" alt="arrow" class="arrow">
+                    </div>
+
+                    <!-- Project Details Modal -->
+                    <div class="modal fade featured__modal" id="exampleModal3" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header d-md-none">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row gy-3 gy-md-0">
+                                        <div class="col-md-8">
+                                            <img class="w-100 rounded-3" src="assets/images/featured/project-1.webp"
+                                                alt="featured">
+                                            <h4 class="my-4 title">Project Details</h4>
+                                            <hr>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
+                                                odio
+                                                odit, est fuga pariatur minus. Voluptatibus eaque aut cupiditate
+                                                nam
+                                                dicta, corrupti quasi officia explicabo repellendus corporis
+                                                dolore
+                                                tempora sed reiciendis. Ullam, ipsam quae ratione dolore
+                                                sapiente
+                                                recusandae voluptatum porro in vel eveniet cupiditate sint
+                                                aliquid
+                                                praesentium et cum dolor.</p>
+
+                                            <h6 class="my-4 title2">--Some Key Features Of This Project</h6>
+                                            <hr>
+                                            <p>
+                                                <strong>Design System:</strong> Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit. Fugiat corrupti vitae animi corporis, in atque
+                                                tempore
+                                                praesentium harum nisi dolores doloribus, a architecto aperiam
+                                                autem
+                                                quia ab exercitationem omnis! Omnis.
+                                            </p>
+                                            <p>
+                                                <strong>Code Structure:</strong> Lorem, ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Ipsam harum est ipsum explicabo temporibus
+                                                iste
+                                                laudantium, voluptates iure quisquam et dolores aliquam nostrum
+                                                nulla?
+                                                Officia sunt quis corrupti alias inventore.
+                                            </p>
+                                            <p>
+                                                <strong>Awesome Animations:</strong> Lorem, ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Ipsam harum est ipsum explicabo temporibus
+                                                iste
+                                                laudantium, voluptates iure quisquam et dolores aliquam nostrum
+                                                nulla?
+                                                Officia sunt quis corrupti alias inventore.
+                                            </p>
+
+                                            <div class="project-img my-4">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img class="rounded-3"
+                                                            src="assets/images/featured/project-2.webp" alt="project">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <img class="rounded-3"
+                                                            src="assets/images/featured/project-3.webp" alt="project">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p>
+                                                <strong>Client Feedback:</strong> Lorem, ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Ipsam harum est ipsum explicabo temporibus
+                                                iste
+                                                laudantium, voluptates iure quisquam et dolores aliquam nostrum
+                                                nulla?
+                                                Officia sunt quis corrupti alias inventore.
+                                            </p>
+
+                                            <hr>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="client__details">
+                                                <h6>About Project</h6>
+                                                <div>
+                                                    <div class="single__info d-flex justify-content-between">
+                                                        <span>Client</span>
+                                                        <span>Portfolio Maker</span>
+                                                    </div>
+                                                    <div class="single__info d-flex justify-content-between">
+                                                        <span>Date</span>
+                                                        <span>02/08/2023</span>
+                                                    </div>
+                                                    <div class="single__info d-flex justify-content-between">
+                                                        <span>Project</span>
+                                                        <span>Portfolio Website</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="client__details mt-4">
+                                                <h6 class="mb-3">Get a Free Quote</h6>
+                                                <div>
+                                                    <input type="text" placeholder="Full name">
+                                                    <input type="email" placeholder="Email@" class="my-3">
+                                                    <textarea class="mb-3" name="message" id="freequote1" cols="30"
+                                                        rows="10" placeholder="type your message"></textarea>
+                                                    <button type="submit"
+                                                        class="btn btn-dark text-white w-100 fw-medium">
+                                                        Place Request
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qoute d-flex align-items-center mt__64 wow fadeInLeft">
+                <div>
+                    <img src="assets/images/featured/qoute.webp" alt="qoute">
+                </div>
+                <div class="qoute__right">
+                    <h4>
+                        I’m the creative mastermind behind some of the freshest and most innovative branding and design
+                        out there.
+                        <i class="fa-regular fa-face-grin"></i>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Section End -->
+    <!-- Workflow Section Start -->
+    <section class="workflow__section pt__120 pb__120">
+        <p class="text-center heading__small wow fadein">MY WORK FLOW</p>
+        <h3 class="text-center wow zoomIn">3 easy step work with me</h3>
+
+        <div class="custom__container">
+            <div class="row mt__48">
+                <div class="col-6 col-md-4 single__step wow fadeInUp" data-wow-delay="0.2s">
+                    <img src="assets/images/workflow/Icon-1.webp" alt="workflow" class="icon">
+                    <h5>Send up your project</h5>
+                </div>
+                <div class="col-6 col-md-4 single__step wow fadeInUp" data-wow-delay="0.4s">
+                    <img src="assets/images/workflow/Icon-2.webp" alt="workflow" class="icon">
+                    <h5>Get it delivered on time</h5>
+                </div>
+                <div class="col-6 col-md-4 single__step wow fadeInUp" data-wow-delay="0.6s">
+                    <img src="assets/images/workflow/Icon-3.webp" alt="workflow" class="icon">
+                    <h5>Take on more clients & scale up</h5>
+                </div>
+            </div>
+            <div class="text-center schedule__brand">
+                <button class="btn__default brand__btn btn btn--border btn--primary btn--animated">
+                    Schedule Free Call
+                    <i class="fa-solid fa-plus plus__icon"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Workflow Section End -->
+
+    <!-- Pricing Section Start -->
+    <section class="pricing__section pt__120 pb__120">
+        <p class="text-center heading__small wow fadein">MY WORK FLOW</p>
+        <h3 class="text-center wow zoomIn">Get started with</h3>
+        <h3 class="text-center wow zoomIn">my plans</h3>
+
+        <div class="custom__container">
+            <div class="pricing__container">
+                <div class="pricing__card wow fadeInUp d-flex flex-column justify-content-between"
+                    data-wow-delay="0.2s">
+                    <div>
+                        <h5>Free</h5>
+                        <h5>$0/ <span class="small__txt">Per Hour</span></h5>
+                        <p>
+                            Explore the product and power small from personal property
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-plus puls__icon"></i>
+                                Free Entry For 15 Days
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-plus puls__icon"></i>
+                                500 Points Everyday
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-plus puls__icon"></i>
+                                2 Limited Pass For Devices
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <button class="btn btn__default bg-dark text-white mt__80">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+                <div class="pricing__card varient__two wow fadeInUp d-flex flex-column justify-content-between"
+                    data-wow-delay="0.4s">
+                    <div>
+                        <h5>Pro</h5>
+                        <h5>$15/ <span class="small__txt">Per Hour</span></h5>
+                        <p>
+                            Explore the product and power small from personal property
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-plus puls__icon"></i>
+                                Free Entry For 15 Days
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-plus puls__icon"></i>
+                                1500 Points Everyday
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-plus puls__icon"></i>
+                                5 Limited Pass For Devices
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <button class="dark__btn btn btn__default bg-dark text-white mt__80">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+
+                <div class="pricing__card wow fadeInUp d-flex flex-column justify-content-between"
+                    data-wow-delay="0.6s">
+                    <div>
+                        <h5>Premium</h5>
+                        <h5>$20/ <span class="small__txt">Per Hour</span></h5>
+                        <p>
+                            Explore the product and power small from personal property
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-plus puls__icon"></i>
+                                Free Entry For 15 Days
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-plus puls__icon"></i>
+                                1500 Points Everyday
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-plus puls__icon"></i>
+                                5 Limited Pass For Devices
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-plus puls__icon"></i>
+                                5 Limited Pass For Devices
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <button class="btn btn__default bg-dark text-white mt__80">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section End -->
+
+    <!-- Blog Section Start -->
+
+    <section id="blog" class="blog__section pt__120 pb__120">
+        <div class="custom__container">
+            <p class="heading__small wow fadeIn">Blog</p>
+            <h3 class="heading__1 wow fadeInDown">Look at the</h3>
+            <h3 class="heading__2 wow fadeInDown" data-wow-delay="0.3s">latest articles</h3>
+
+            <div class="blogs pt__48">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="blog__left">
+                            <div class="single__blog wow fadeInLeft">
+                                <img src="assets/images/blog/blog-1.webp" alt="single-blog" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                <div class="blog__content">
+                                    <span>25 FEB, 2023</span>
+                                    <span>. ADMIN</span>
+                                    <h5 data-bs-toggle="modal" data-bs-target="#staticBackdrop">Why email marketing
+                                        matters</h5>
+                                    <p>With the rise of social media and prolific online
+                                        advertisements it can be easy to forget about email.
+                                        There is a large quantity of...</p>
+                                </div>
+                            </div>
+                            <!-- modal blog details -->
+                            <div class="modal fade blog__modal" id="staticBackdrop" tabindex="-1" style="display: none;"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header pb-3 d-md-none">
+                                            <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="featured__img" src="assets/images/blog/blog-details.webp"
+                                                alt="blog-1">
+                                            <h4 class="fs-1 my-4">Why email marketing matters</h4>
+                                            <p>Date : <strong>25 FEB, 2023</strong> By <strong>ADMIN</strong></p>
+                                            <ul>
+                                                <li>
+                                                    <p> <strong>Direct and Personal Communication:</strong> Email
+                                                        marketing allows businesses to communicate directly with
+                                                        their audience. When someone subscribes to your email list,
+                                                        they've given you permission to enter their inbox. This
+                                                        direct line of communication allows you to build a more
+                                                        personal and one-on-one relationship with your customers.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p> <strong>Cost-Effective:</strong> Email
+                                                        marketing allows businesses to communicate directly with
+                                                        their audience. When someone subscribes to your email list,
+                                                        they've given you permission to enter their inbox. This
+                                                        direct line of communication allows you to build a more
+                                                        personal and one-on-one relationship with your customers.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p> <strong>High ROI:</strong> Email
+                                                        marketing allows businesses to communicate directly with
+                                                        their audience. When someone subscribes to your email list,
+                                                        they've given you permission to enter their inbox. This
+                                                        direct line of communication allows you to build a more
+                                                        personal and one-on-one relationship with your customers.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p> <strong>Audience Segmentation: </strong> Email
+                                                        marketing allows businesses to communicate directly with
+                                                        their audience. When someone subscribes to your email list,
+                                                        they've given you permission to enter their inbox. This
+                                                        direct line of communication allows you to build a more
+                                                        personal and one-on-one relationship with your customers.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p> <strong>Audience Segmentation: </strong> Email
+                                                        marketing allows businesses to communicate directly with
+                                                        their audience. When someone subscribes to your email list,
+                                                        they've given you permission to enter their inbox. This
+                                                        direct line of communication allows you to build a more
+                                                        personal and one-on-one relationship with your customers.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p> <strong>Audience Segmentation: </strong> Email
+                                                        marketing allows businesses to communicate directly with
+                                                        their audience. When someone subscribes to your email list,
+                                                        they've given you permission to enter their inbox. This
+                                                        direct line of communication allows you to build a more
+                                                        personal and one-on-one relationship with your customers.
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="blog__right">
+                            <div class="single__blog d-flex flex-wrap flex-md-nowrap wow fadeInDown">
+                                <img src="assets/images/blog/blog-2.webp" alt="single-blog" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                <div class="blog__content d-flex flex-column justify-content-center">
+                                    <div><span>25 FEB, 2023</span>
+                                        <span>. ADMIN</span>
+                                    </div>
+                                    <h6 data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Why email marketing
+                                        matters</h6>
+                                    <p>With the rise of social media and prolific online
+                                        advertisements it can be easy ..</p>
+                                </div>
+
+                                <!-- modal blog details -->
+                                <div class="modal fade blog__modal" id="staticBackdrop1" tabindex="-1"
+                                    style="display: none;" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header pb-3 d-md-none">
+                                                <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="featured__img" src="assets/images/blog/blog-details.webp"
+                                                    alt="blog-1">
+                                                <h4 class="fs-1 my-4 ">Why email marketing matters</h4>
+                                                <p>Date : <strong>25 FEB, 2023</strong> By <strong>ADMIN</strong></p>
+                                                <ul>
+                                                    <li>
+                                                        <p> <strong>Direct and Personal Communication:</strong> Email
+                                                            marketing allows businesses to communicate directly with
+                                                            their audience. When someone subscribes to your email list,
+                                                            they've given you permission to enter their inbox. This
+                                                            direct line of communication allows you to build a more
+                                                            personal and one-on-one relationship with your customers.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p> <strong>Cost-Effective:</strong> Email
+                                                            marketing allows businesses to communicate directly with
+                                                            their audience. When someone subscribes to your email list,
+                                                            they've given you permission to enter their inbox. This
+                                                            direct line of communication allows you to build a more
+                                                            personal and one-on-one relationship with your customers.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p> <strong>High ROI:</strong> Email
+                                                            marketing allows businesses to communicate directly with
+                                                            their audience. When someone subscribes to your email list,
+                                                            they've given you permission to enter their inbox. This
+                                                            direct line of communication allows you to build a more
+                                                            personal and one-on-one relationship with your customers.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p> <strong>Audience Segmentation: </strong> Email
+                                                            marketing allows businesses to communicate directly with
+                                                            their audience. When someone subscribes to your email list,
+                                                            they've given you permission to enter their inbox. This
+                                                            direct line of communication allows you to build a more
+                                                            personal and one-on-one relationship with your customers.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p> <strong>Audience Segmentation: </strong> Email
+                                                            marketing allows businesses to communicate directly with
+                                                            their audience. When someone subscribes to your email list,
+                                                            they've given you permission to enter their inbox. This
+                                                            direct line of communication allows you to build a more
+                                                            personal and one-on-one relationship with your customers.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p> <strong>Audience Segmentation: </strong> Email
+                                                            marketing allows businesses to communicate directly with
+                                                            their audience. When someone subscribes to your email list,
+                                                            they've given you permission to enter their inbox. This
+                                                            direct line of communication allows you to build a more
+                                                            personal and one-on-one relationship with your customers.
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single__blog d-flex flex-wrap flex-md-nowrap wow fadeInDown mt__30"
+                                data-wow-delay="0.4s">
+                                <img src="assets/images/blog/blog-3.webp" alt="single-blog" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop2">
+                                <div class="blog__content d-flex flex-column justify-content-center">
+                                    <div><span>25 FEB, 2023</span>
+                                        <span>. ADMIN</span>
+                                    </div>
+                                    <h6 data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Why email marketing
+                                        matters</h6>
+                                    <p>With the rise of social media and prolific online
+                                        advertisements it can be easy ..</p>
+                                </div>
+
+                                <!-- modal blog details -->
+                                <div class="modal fade blog__modal" id="staticBackdrop2" tabindex="-1"
+                                    style="display: none;" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header pb-3 d-md-none">
+                                                <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="featured__img" src="assets/images/blog/blog-details.webp"
+                                                    alt="blog-1">
+                                                <h4 class="fs-1 my-4 ">Why email marketing matters</h4>
+                                                <p>Date : <strong>25 FEB, 2023</strong> By <strong>ADMIN</strong></p>
+                                                <ul>
+                                                    <li>
+                                                        <p> <strong>Direct and Personal Communication:</strong> Email
+                                                            marketing allows businesses to communicate directly with
+                                                            their audience. When someone subscribes to your email list,
+                                                            they've given you permission to enter their inbox. This
+                                                            direct line of communication allows you to build a more
+                                                            personal and one-on-one relationship with your customers.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p> <strong>Cost-Effective:</strong> Email
+                                                            marketing allows businesses to communicate directly with
+                                                            their audience. When someone subscribes to your email list,
+                                                            they've given you permission to enter their inbox. This
+                                                            direct line of communication allows you to build a more
+                                                            personal and one-on-one relationship with your customers.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p> <strong>High ROI:</strong> Email
+                                                            marketing allows businesses to communicate directly with
+                                                            their audience. When someone subscribes to your email list,
+                                                            they've given you permission to enter their inbox. This
+                                                            direct line of communication allows you to build a more
+                                                            personal and one-on-one relationship with your customers.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p> <strong>Audience Segmentation: </strong> Email
+                                                            marketing allows businesses to communicate directly with
+                                                            their audience. When someone subscribes to your email list,
+                                                            they've given you permission to enter their inbox. This
+                                                            direct line of communication allows you to build a more
+                                                            personal and one-on-one relationship with your customers.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p> <strong>Audience Segmentation: </strong> Email
+                                                            marketing allows businesses to communicate directly with
+                                                            their audience. When someone subscribes to your email list,
+                                                            they've given you permission to enter their inbox. This
+                                                            direct line of communication allows you to build a more
+                                                            personal and one-on-one relationship with your customers.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p> <strong>Audience Segmentation: </strong> Email
+                                                            marketing allows businesses to communicate directly with
+                                                            their audience. When someone subscribes to your email list,
+                                                            they've given you permission to enter their inbox. This
+                                                            direct line of communication allows you to build a more
+                                                            personal and one-on-one relationship with your customers.
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section End -->
+    <!-- Footer Section Start -->
+
+    <footer class="text-white" id="footer">
+        <div class="custom__container pt__120">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="footer__left">
+                        <div class="logo text-white d-flex align-items-center wow  fadeIn" data-wow-delay="0.3s">
+                            <a href="index-2.html" class="d-flex align-items-center text-decoration-none text-white">
+                                <img src="assets/images/logo.webp" alt="site-logo">
+                                <span>Henry</span>
+                            </a>
+                        </div>
+
+                        <div class="heading__1 d-flex align-items-center mt__40">
+                            <h2>Start</h2>
+                            <h6>Do you have project in mind?</h6>
+                        </div>
+
+                        <h2 class="heading__2">a project</h2>
+                    </div>
+                </div>
+                <div class="footer__right col-md-5 mt-5 mt-md-0">
+                    <div class="row">
+                        <div class="col-4 col-md-4 d-flex align-items-end align-items-md-start">
+                            <ul>
+                                <li><a href="javascript:void(0)">My Team</a></li>
+                                <li><a href="javascript:void(0)">FAQs</a></li>
+                                <li><a href="javascript:void(0)">Contact</a></li>
+                                <li><a href="javascript:void(0)">What I Do</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4 col-md-4 d-flex align-items-end align-items-md-start">
+                            <ul>
+                                <li><a href="javascript:void(0)">About</a></li>
+                                <li><a href="javascript:void(0)">Services</a></li>
+                                <li><a href="javascript:void(0)">Get in touch</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4 col-md-4 d-flex align-items-end align-items-md-start">
+                            <ul>
+                                <li><a href="javascript:void(0)">News</a></li>
+                                <li><a href="javascript:void(0)">Products</a></li>
+                                <li><a href="javascript:void(0)">Portfolio</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact mt__64">
+                        <address>
+                            <span class="me-3">henry@gmail.com</span>
+                            <span>. + 784549 4981 00</span>
+                        </address>
+                    </div>
+                </div>
+            </div>
+
+            <div class="working__profile text-center mt__100">
+                <div class="row">
+                    <div class="col-3 col-md-3">
+                        <div class="single__profile playfair__style">
+                            <a href="javascript:void(0)">Facebook</a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-3">
+                        <div class="single__profile playfair__style">
+                            <a href="javascript:void(0)">Twitter</a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-3">
+                        <div class="single__profile playfair__style">
+                            <a href="javascript:void(0)">Behance</a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-3">
+                        <div class="single__profile border-0 playfair__style">
+                            <a href="javascript:void(0)">Dribble</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Footer Section End -->
+
+    <!-- Font Asesome js -->
+    <script src="assets/js/all.js"></script>
+    <!-- Swiper Js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- bootstrap  -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- odometer -->
+    <script src="assets/js/odometer.min.js"></script>
+    <!-- viewport -->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!-- wow js -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- hover reveal js -->
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/imagerevealhover.js"></script>
+    <!-- type writer -->
+    <script src="assets/js/jquery.typewriter.js"></script>
+    <!-- main custom js -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        $('#typewriter').typewriter({
+            text: ["ui Designer", "web Developer", "app Developer"],
+            typeDelay: 200,
+            waitingTime: 1000,
+            prefix: ""
+        });
+
+        document.getElementById("typewriter-suffix").innerHTML = `<i class="fa-solid fa-i-cursor"></i>`
+    </script>
 </body>
+
+
+<!-- Mirrored from portfolio-html-chi.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Mar 2026 04:42:18 GMT -->
 </html>
